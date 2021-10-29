@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/estilos2.css">
+      <link rel="stylesheet" href="css/footer.css">
+        <link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+     
+      <header id="header">
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">&nbsp;&nbsp;&nbsp;Prestamo de dinero</span>
+  </nav>
+<div class="container mt-4" id="body">
+<div class="row">
+    <div class="col-md-5">
+        <div class="card">
+            <div class="card-header">
+                <h2>Realizar nuevo prestamo</h2>
+            </div>  
+            <label for="formGroupExampleInput" id="alerta"></label>
+                        
+            <div class="card-body">
+                <form id="formulario" autocomplete="off" >
+                  
+                   <div class="form-group">
+                    <label for="formGroupExampleInput">Nombre del cliente</label>
+                    <input type="text" id="persona" class="form-control" placeholder="Nombre">
+                </div><br>
+                  <div class="form-group" >
+                       
+                        <label for="formGroupExampleInput">Monto inicia a prestar:</label>
+                        <input type="text" id="monto" class="form-control" placeholder="monto" >
+                    </div><br>
+                  
+                  
+                   <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text" for="inputGroupSelect01">Periodo de tiempo</label>
+                        </div>
+                        <select class="form-control" id="tiempo">
+                          <option selected>Seleccione</option>
+                          <option value="3">3 meses</option>
+                          <option value="6">6 meses</option>
+                          <option value="12">12 meses</option>
+                          
+                        </select>
+                      </div>
+                     
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">Ingrese el interes (%):</label>
+                        <input type="text" id="interes" class="form-control" placeholder="Interes" >
+                    
+                      </div><br>
+                      <label for="formGroup ExampleInput" id="datos"></label><br>
+
+                      <a href="#" onclick="datosP();" class="btn btn-success ml-5">Mostrar</a>
+                      <button type="submit" class="btn btn-primary">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <table class="table table-striped">
+            <thead class="">
+              <tr>
+                <th scope="col">Nombre del cliente</th>  
+                <th scope="col">Monto Inicial</th>
+                <th scope="col">Periodo de tiempo</th>
+                <th scope="col">Interes</th>
+                <th scope="col">Capital final</th>
+                <th scope="col">Cuotas</th>
+              
+              </tr>
+            </thead>
+            <tbody id="tasks">
+              
+            </tbody>
+          </table>    
+    </div>
+</div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+    
+    <script src="js/prestamo.js"></script>
+<br>
+  
+</body>
+</html>
